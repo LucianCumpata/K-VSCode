@@ -1,0 +1,16 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
+
+root = true
+
+
+[*]
+end_of_line = crlf
+trim_trailing_whitespace = false
+insert_final_newline = false
+
+
+
+[*.k]
+indent_style = space
+indent_size = 4

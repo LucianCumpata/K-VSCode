@@ -1,0 +1,56 @@
+{
+	"name": "k",
+	"displayName": "K",
+	"description": "K language support for VSC",
+	"version": "0.0.8",
+	"publisher": "CLV",
+	"author": {
+		"name": "Lucian Cumpata",
+		"email": "cumpata.lu@outlook.com",
+		"url":"https://github.com/LucianCumpata"
+		},
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"license": "LICENSE.txt",
+	"preview": true,
+	"galleryBanner": {
+		"color": "#2c2e7e",
+		"theme": "dark"
+	},
+	"icon":"888.png",
+	"categories": [
+		"Languages",
+		"Snippets"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "kframework",
+				"aliases": [
+					"K",
+					"k",
+					"Kframework"
+				],
+				"extensions": [
+					".k"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "kframework",
+				"scopeName": "text.k",
+				"path": "./syntaxes/k.tmLanguage"
+			}
+		],
+		"snippets": [
+			{
+				"language": "kframework",
+				"path": "./snippets/k.json"
+			}
+		]
+	},
+	"__metadata": null
+}

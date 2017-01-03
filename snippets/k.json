@@ -1,0 +1,68 @@
+{ "module-SYNTAX": {
+		"prefix": "module",
+		"body": [
+			"module ${NAME}-SYNTAX ",
+            "$0",
+            " ",
+
+            "endmodule"
+		],
+		"description": "Code snippet for 'module-SYNTAX' "
+	},
+    "module": {
+		"prefix": "module",
+		"body": [
+			"module ${NAME} ",
+            "$0",
+            " ",
+
+            "endmodule"
+		],
+		"description": "Code snippet for 'module' "
+	},
+	"module-skeleton": {
+		"prefix": "start",
+		"body": [
+			"module ${NAME}-SYNTAX ",
+            "$0",
+            " ",
+            " ",
+            "endmodule",
+			" ",
+			"module ${NAME} ",
+			"imports ${NAME}-SYNTAX",
+            " ",
+			" ",
+			" ",
+			" ",
+            "endmodule"
+		],
+		"description": "Code snippet for K definition skeleton "
+	},
+    "configuration": {
+		"prefix": "configuration",
+		"body": [
+			"configuration <T> ",
+            "${}",
+            " ",
+
+            "</T>"
+		],
+		"description": "Code snippet for 'configuration' "
+    },
+
+	"syntax": {
+		"prefix": "syntax",
+		"body": [
+			"syntax ${Name} ::= ${} "
+		],
+		"description": "Code snippet for 'syntax' "
+	},
+
+	 "ung.tags": {
+		"prefix": "tag",
+		"body": ["<${tag}>$0</${tag}>"
+		],
+		"description": "Code snippet for tags "
+	 }
+}
