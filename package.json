@@ -3,7 +3,7 @@
 	"displayName": "K",
 	"description": "K language support for VSC",
 	"version": "0.0.9",
-	"publisher": "CLV",
+	"publisher": "clv",
 	"author": {
 		"name": "Lucian Cumpata",
 		"email": "cumpata.lu@outlook.com",
