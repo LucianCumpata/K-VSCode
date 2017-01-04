@@ -15,12 +15,12 @@ https://github.com/kframework
 * [Tutorial](http://www.kframework.org/index.php/K_Tutorial)
 
 ## Snippets 
-start <br>
-tag <br>
-syntax <br>
-configuration <br>
-
-
+### Using custom "start" and generic "syntax" snippets <br>
+![snippets1](https://cloud.githubusercontent.com/assets/23559082/21643894/805fd5a6-d293-11e6-9336-735bcb3d0185.gif)
+### Using custom "tag" and generic "configuration" snippets <br>
+![snippets2](https://cloud.githubusercontent.com/assets/23559082/21645820/492dcf44-d29c-11e6-89ca-5a84d8886b8e.gif)
+## Grammar
+![grammar1](https://cloud.githubusercontent.com/assets/23559082/21646023/29d451bc-d29d-11e6-9088-25480e969740.gif)
 
 -----------------------------------------------------------------------------------------------------------
 

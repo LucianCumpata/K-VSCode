@@ -70,7 +70,7 @@
 		</dict>
 		<dict>
 			<key>match</key> <!--> Colour light-blue <-->
-			<string>(!\b[A-Z]+([^\d]\S)*)\b|(\$\b[A-Z]+([^\d]\S)*)\b</string>
+			<string>(!\b[A-Z]+(\w)*\b)|(\$\b[A-Z]+(\w)*\b)</string>
 			<key>name</key>
 			<string>support.type.property-name.k</string>
 		</dict>
