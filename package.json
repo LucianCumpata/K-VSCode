@@ -2,7 +2,7 @@
 	"name": "k",
 	"displayName": "K",
 	"description": "K language support for VSC",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"publisher": "CLV",
 	"author": {
 		"name": "Lucian Cumpata",
@@ -19,6 +19,13 @@
 		"theme": "dark"
 	},
 	"icon":"icon.png",
+	"bugs": {
+		"url": "https://github.com/LucianCumpata/K-VSCode/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/LucianCumpata/K-VSCode.git"
+	},
 	"categories": [
 		"Languages",
 		"Snippets"
