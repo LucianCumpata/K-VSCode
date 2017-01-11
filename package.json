@@ -2,7 +2,7 @@
     "name": "k",
     "displayName": "K",
     "description": "K language support for VSC",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "clv",
     "author": {
         "name": "Lucian Cumpata",
@@ -35,9 +35,9 @@
             {
                 "id": "kframework",
                 "aliases": [
+                    "Kframework",
                     "K",
-                    "k",
-                    "Kframework"
+                    "k"
                 ],
                 "extensions": [
                     ".k"
