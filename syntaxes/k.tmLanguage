@@ -75,6 +75,12 @@
 			<string>support.type.property-name.k</string>
 		</dict>
 		<dict>
+			<key>match</key> <!--> Colour light-blue <-->
+			<string>HOLE</string>
+			<key>name</key>
+			<string>support.type.property-name.k</string>
+		</dict>
+		<dict>
 		    <key>match</key> <!--> Colour Light-red <-->
 			<string>\b(strict|avoid|prefer|bracket|non-assoc|seqstrict|left|right|macro|token|notInRules|autoReject)\b</string>
 			<key>name</key>
@@ -82,7 +88,7 @@
 		</dict>
 		<dict>
 			<key>match</key> <!--> Colour blue  <-->
-			<string>\b(syntax|Id|Int|Bool|String|configuration|imports|Token|Lexer|Float|requires|Kresult)\b</string>
+			<string>\b(syntax|Id|Int|Bool|String|configuration|imports|Token|Lexer|Float|requires|Kresult|context)\b</string>
 			<key>name</key>
 			<string>keyword.reserved.k</string>
 		</dict>
