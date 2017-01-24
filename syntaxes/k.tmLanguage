@@ -82,19 +82,19 @@
 		</dict>
 		<dict>
 		    <key>match</key> <!--> Colour Light-red <-->
-			<string>\b(strict|avoid|prefer|bracket|non-assoc|seqstrict|left|right|macro|token|notInRules|autoReject)\b</string>
+			<string>\b(strict|avoid|prefer|bracket|non-assoc|seqstrict|left|right|macro|token|notInRules|autoReject|structural)\b</string>
 			<key>name</key>
 			<string>string.regexp.k</string>
 		</dict>
 		<dict>
 			<key>match</key> <!--> Colour blue  <-->
-			<string>\b(syntax|Id|Int|Bool|String|configuration|imports|Token|Lexer|Float|requires|Kresult|context)\b</string>
+			<string>\b(syntax|rule|Id|Int|Bool|String|configuration|imports|Token|Lexer|Float|requires|Kresult|context)\b</string>
 			<key>name</key>
 			<string>keyword.reserved.k</string>
 		</dict>
 		<dict>
 			<key>match</key> <!--> Colour orange <-->
-			<string>\b(rule|module|endmodule)\b</string>
+			<string>\b(module|endmodule)\b</string>
 			<key>name</key>
 			<string>warn-token</string>
 		</dict>
@@ -105,10 +105,10 @@
 			<string>constant.numeric.k</string>
 		</dict>
 		<dict>
-			<key>match</key> <!--> Not working yet <-->
-			<string>(&lt;&gt;)|(\/&lt;&gt;)</string>
+			<key>match</key> <!--> tags <-->
+			<string>&lt;\/?[\w\d]*&gt;</string>
 			<key>name</key>
-			<string>keyword.operator.k</string>
+			<string>constant.regexp.emphasis.strong.tags.k</string>
 		</dict>
 		<dict>
 			<key>match</key>

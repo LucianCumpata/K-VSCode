@@ -2,7 +2,7 @@
     "name": "kframework",
     "displayName": "K",
     "description": "K language support for VSC",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "publisher": "clv",
     "author": {
         "name": "Lucian Cumpata",
@@ -13,7 +13,6 @@
         "vscode": "^1.5.0"
     },
     "license": "LICENSE.txt",
-    "preview": true,
     "galleryBanner": {
         "color": "#2c2e7e",
         "theme": "dark"
