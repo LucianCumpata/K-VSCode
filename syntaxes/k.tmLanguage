@@ -82,7 +82,7 @@
 		</dict>
 		<dict>
 		    <key>match</key> <!--> Colour Light-red <-->
-			<string>\b(strict|avoid|prefer|bracket|non-assoc|seqstrict|left|right|macro|token|notInRules|autoReject|structural|latex)\b</string>
+			<string>\b(strict|avoid|prefer|bracket|non-assoc|seqstrict|left|right|macro|token|notInRules|autoReject|structural|latex|binder)\b</string>
 			<key>name</key>
 			<string>string.regexp.k</string>
 		</dict>
