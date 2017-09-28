@@ -108,7 +108,7 @@
 		<!-- tag -->
 		<dict>
 			<key>begin</key>
-			<string>(&lt;)\s*([\w\d]+)</string>
+			<string>(&lt;)\s*([\w\d\-\_]+)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -138,7 +138,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>([\w\d]+)\s*\=\s*(\".+?\")</string>
+					<string>([\w\d\-\_]+)\s*\=\s*(\".+?\")</string>
 					<key>captures</key>
 					<dict>
 						<key>1</key>
@@ -157,7 +157,7 @@
 		</dict>
 		<dict>
 			<key>match</key> 
-			<string>(&lt;)\s*\/([\w\d]+?)\s*(&gt;)</string>
+			<string>(&lt;)\s*\/([\w\d\-\_]+?)\s*(&gt;)</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
