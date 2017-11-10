@@ -2,7 +2,7 @@
     "name": "kframework",
     "displayName": "K",
     "description": "K language support for VSC",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "publisher": "clv",
     "author": {
         "name": "Lucian Cumpata",
