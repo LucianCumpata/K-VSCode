@@ -82,7 +82,7 @@
 		</dict>
 		<dict>
 		    <key>match</key> <!--> Colour Light-red <-->
-			<string>\b(strict|avoid|prefer|bracket|non-assoc|seqstrict|left|right|macro|token|notInRules|autoReject|structural)\b</string>
+			<string>\b(strict|avoid|prefer|bracket|non-assoc|seqstrict|left|right|macro|token|notInRules|autoReject|structural|latex|binder)\b</string>
 			<key>name</key>
 			<string>string.regexp.k</string>
 		</dict>
@@ -96,7 +96,7 @@
 			<key>match</key> <!--> Colour orange <-->
 			<string>\b(module|endmodule)\b</string>
 			<key>name</key>
-			<string>warn-token</string>
+			<string>keyword.module.k</string>
 		</dict>
 		<dict>
 			<key>match</key> <!--> Colour Light green <-->
@@ -104,12 +104,80 @@
 			<key>name</key>
 			<string>constant.numeric.k</string>
 		</dict>
+		
+		<!-- tag -->
 		<dict>
-			<key>match</key> <!--> tags <-->
-			<string>&lt;\/?[\w\d]*&gt;</string>
-			<key>name</key>
-			<string>constant.regexp.emphasis.strong.tags.k</string>
+			<key>begin</key>
+			<string>(&lt;)\s*([\w\d\-\_]+)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.tag.k</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.tag.k</string>
+				</dict>
+			</dict>
+
+			<key>end</key>
+			<string>\s*(&gt;)</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.tag.k</string>
+				</dict>
+			</dict>
+
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>([\w\d\-\_]+)\s*\=\s*(\".+?\")</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>constant.regexp.emphasis.strong.tags.k</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>string.quoted.double.k</string>
+						</dict>
+					</dict>
+				</dict>
+			</array>
 		</dict>
+		<dict>
+			<key>match</key> 
+			<string>(&lt;)\s*\/([\w\d\-\_]+?)\s*(&gt;)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.tag.k</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.tag.k</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.tag.k</string>
+				</dict>
+			</dict>
+		</dict>
+
 		<dict>
 			<key>match</key>
 			<string>\+|-|/|\*|%|=|\^|~|\||\?|&lt;|&gt;|&amp;</string>
