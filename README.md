@@ -2,6 +2,10 @@
 
 Welcome to the K extension for Visual Studio Code!
 
+## Please note this extension is no longer maintained and deprecated.
+
+## Please install the official K extension here: https://marketplace.visualstudio.com/items?itemName=RuntimeVerification.k-vscode
+
 
 ## Features
 This extension includes: <br>
